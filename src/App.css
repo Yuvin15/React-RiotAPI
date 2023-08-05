@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  color: white;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -24,9 +26,20 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header img {
+  height: 300px;
+  width: 300px; /* Adjust the width as per your requirement */
+  height: 300px; /* Adjust the height as per your requirement */
 }
+
+.accountBlock{
+        border: 2px solid rgb(143, 29, 29);
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+        border-radius: 50px; 
+}
+
 
 @keyframes App-logo-spin {
   from {

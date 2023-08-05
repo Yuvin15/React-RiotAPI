@@ -1,0 +1,24 @@
+.Menu-header {
+  text-align: right;
+}
+
+.menu-list {
+  background-color: #282c34;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: large;
+  color: chartreuse;
+}
+
+.menu-list li {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold; /* Add this line to make the text bold */
+  text-decoration: none; /* Use "none" for removing underline */
+  margin-right: 80px; /* Optional: Add some spacing between the list items */
+}
+
+.App-link {
+  color: #d41565;
+}
