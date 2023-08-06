@@ -8,12 +8,15 @@ function App() {
 
   const[summonerName, setsearchText] = useState("");
   const [playerData, setPLayerData] = useState("");
-  console.log(summonerName);
-  const API_KEY = "YOUR_API_KEY"
   
+  console.log(summonerName);
+  const API_KEY = "RGAPI-9b49b8cb-368a-4b91-9e61-d27964e4a414"
+   {/* Change API key*/}
+    
 function searchPlayer(event) {
 
   var APICallString = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + summonerName + "?api_key=" + API_KEY
+   {/* API endpoint*/}
 
   axios.get(APICallString).then(function ( response ){ 
 
@@ -43,6 +46,8 @@ console.log(playerData);
       {Object.keys(playerData).length !== 0 ? (
         <>
           <p>{playerData.name}</p>
+          <img width="100" height="100" src={"https://ddragon.leagueoflegends.com/cdn/13.15.1/img/profileicon/" + playerData.profileIconId +".png"} /> 
+          {/* Look at this website and update the version per patch: https://ddragon.leagueoflegends.com/api/versions.json*/}
           <p>Summoner Level {playerData.summonerLevel}</p>
         </>
         ) : (
