@@ -39,5 +39,5 @@ Contributions are welcome! If you have any suggestions or improvements, feel fre
 I want to in the future add Summoner's Icon, WR, Total Games played, Match History, Current Free Rotation of champions, and some stupid goofy thing of the player's most played champion.(Probably insulting, honestly doesn't even matter its a LoL application, you experience worse playing the game.)
 
 ## HUGE CREDIT 
-https://youtube.com/watch?v=w9qaS6Q0Yr8&feature=share8
-https://stackoverflow.com/questions/68397916/riot-api-how-to-get-summoner-profile-icon-image
+1) https://youtube.com/watch?v=w9qaS6Q0Yr8&feature=share8
+2) https://stackoverflow.com/questions/68397916/riot-api-how-to-get-summoner-profile-icon-image
