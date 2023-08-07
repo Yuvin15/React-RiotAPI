@@ -2,7 +2,8 @@
   text-align: right;
 }
 
-.menu-list {
+.menu-list { 
+  border: 2px solid 282c34(138, 36, 36);
   background-color: #282c34;
   list-style-type: none;
   padding: 0;
@@ -12,11 +13,13 @@
 }
 
 .menu-list li {
+  font-style: italic;
+  cursor:pointer;
   display: inline-block;
   text-align: center;
-  font-weight: bold; /* Add this line to make the text bold */
-  text-decoration: none; /* Use "none" for removing underline */
-  margin-right: 80px; /* Optional: Add some spacing between the list items */
+  font-weight: bold; 
+  text-decoration: none; 
+  margin-right: 80px; 
 }
 
 .App-link {
