@@ -35,8 +35,12 @@ Please refrain from clicking the tempting buttons, as they might have unintended
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to submit a pull request.
 
+## Updates
+1) Summoner icons now showing.
+2) Free Champion rotation showing.
+
 ## Future Additions
-I want to in the future add Summoner's Icon, WR, Total Games played, Match History, Current Free Rotation of champions, and some stupid goofy thing of the player's most played champion.(Probably insulting, honestly doesn't even matter its a LoL application, you experience worse playing the game.)
+~~I want to in the future add Summoner's Icon~~, WR, Total Games played, Match History, ~~Current Free Rotation of champions~~, and some stupid goofy thing of the player's most played champion.(Probably insulting, honestly doesn't even matter its a LoL application, you experience worse playing the game.)
 
 ## HUGE CREDIT 
 1) https://youtube.com/watch?v=w9qaS6Q0Yr8&feature=share8
