@@ -166,7 +166,7 @@ function FreeChampions() {
   const [error, setError] = useState(false); // New error state
 
   const SPLASH_ART_BASE_URL = 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/';
-  const API_KEY = "RGAPI-6143788a-2eb2-4732-98a7-5d60319247b2";
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const freeChampionsString = "https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=" + API_KEY;
 
   useEffect(() => {

@@ -8,12 +8,15 @@ import FreeChampions from './components/FreeChampions/FreeChampions';
 
 function App() {
 
+  // console.log(process.env.REACT_APP_API_KEY);
+
   const[summonerName, setsearchText] = useState("");
   const [playerData, setPLayerData] = useState("");
+  const[playersChamps, setplayersChamps] = useState("");
 
 
   console.log(summonerName);
-  const API_KEY = "RGAPI-6143788a-2eb2-4732-98a7-5d60319247b2";
+  const API_KEY = process.env.REACT_APP_API_KEY;
    /* Change API key*/
     
 function searchPlayer(event) {
@@ -30,6 +33,21 @@ function searchPlayer(event) {
     console.log("Error", error); {/* Is an error occurs look in the console in localhost*/}
 
   });
+}
+
+function getMostPlayed(event){
+  var API_CALL_STRING = "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" + playerData.id + "?api_key=" + API_KEY
+
+  axios.get(API_CALL_STRING).then(function ( response ){ 
+
+    setplayersChamps(response.data); {/* This sets the data to the function*/}
+
+  }).catch(function ( error ) {
+
+    console.log("Error", error); {/* Is an error occurs look in the console in localhost*/}
+
+  });
+
 }
 
 console.log(playerData);
@@ -51,9 +69,10 @@ console.log(playerData);
       {Object.keys(playerData).length !== 0 ? ( 
         <>
           <p>{playerData.name}</p>
-          <img width="100" height="100" src={"https://ddragon.leagueoflegends.com/cdn/13.15.1/img/profileicon/" + playerData.profileIconId +".png"} /> 
+          <img width="100" height="100" src={"https://ddragon.leagueoflegends.com/cdn/13.16.1/img/profileicon/" + playerData.profileIconId +".png"} /> 
           {/* Look at this website and update the version per patch: https://ddragon.leagueoflegends.com/api/versions.json*/}
           <p>Summoner Level {playerData.summonerLevel}</p>
+          <p>Your most played is: {}</p> {/* try and figure out why i cant get the first body data from the json data*/}
         <LikeButton />
         </>
         ) : (
